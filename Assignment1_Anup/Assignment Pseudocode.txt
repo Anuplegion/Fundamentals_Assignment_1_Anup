@@ -1,4 +1,4 @@
-Pseudocode for Programs
+Pseudocode for Program with both Algorithms
 
 -------------- Algorithm 1 ----------------
 Take user input for 30 students

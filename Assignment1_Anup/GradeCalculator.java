@@ -30,5 +30,22 @@ public class GradeCalculator
         }
     }
     
+
+
+//Print all 30 input marks 
+System.out.println("Marks for all students: ");
+for (double mark : marks) {
+    System.out.print(mark + " ");
+}
+System.out.println();
+
+//Calculate Highest Mark by comparing
+double maximum = marks[0]; //initialize maximum and set first value as maximum
+for (double mark : marks){
+    if (mark > maximum){
+        maximum = mark;
+    }
+}
+System.out.println("Highest mark is: " + maximum);
 }
 }

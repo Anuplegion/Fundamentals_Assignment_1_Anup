@@ -41,18 +41,18 @@ public class GradeCalculator
         
         //Calculate Highest Mark by comparing
         double maximum = marks[0]; //initialize maximum and set first value as maximum
-        for (double mark : marks){
-            if (mark > maximum){
-                maximum = mark;
+        for (int i =0; i <marks.length; i++) {
+            if (marks[i] > maximum){
+                maximum = marks[i];
             }
         }
         System.out.println("Highest mark is: " + maximum);
         
         //Calculate Lowest Mark
         double minimum = marks[0]; //initialize minimum and set first value as minimum
-        for (double mark : marks){
-            if (mark < minimum){
-                minimum = mark; 
+        for (int i =0; i <marks.length; i++){
+            if (marks[i] < minimum){
+                minimum = marks[i]; 
             }
         }
         System.out.println("Lowest mark is: " + minimum);
@@ -90,6 +90,6 @@ public class GradeCalculator
         
         
 
-takeinput.close();
+takeinput.close(); //closing the scanner that takes input at the end of all actions
 }
 }

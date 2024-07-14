@@ -11,7 +11,7 @@ public class GradeCalculator
 {
     public static void main (String[] args) /* main method for program to know where to begin */ {
     Scanner takeinput = new Scanner(System.in); //takeinput created as a scanner which will take input.
-    double[] marks = new double[30]; //Creation of marks array with 30 memory slots.
+    double[] marks = new double[30]; //Creation of marks array of 30 length.
     
     //Take input for 30 marks
     for(int i=0; i < 30; i++){
@@ -31,19 +31,18 @@ public class GradeCalculator
     }
     
 
-
         //Print all 30 input marks 
         System.out.println("Marks for all students: ");
-        for (double mark : marks) {
-            System.out.print(mark + " " + ",");
+        for (int i =0; i <marks.length; i++) {
+            System.out.print(marks[i] + " " + ",");
         }
         System.out.println();
         
         //Calculate Highest Mark by comparing
         double maximum = marks[0]; //initialize maximum and set first value as maximum
         for (int i =0; i <marks.length; i++) {
-            if (marks[i] > maximum){
-                maximum = marks[i];
+            if (marks[i] > maximum) /* This checks if selected mark marks[i] is greater than the curernt maximum*/{
+                maximum = marks[i]; //If the if condtion is met then the current maximum is repalced with marks in "i" position.
             }
         }
         System.out.println("Highest mark is: " + maximum);
@@ -51,8 +50,8 @@ public class GradeCalculator
         //Calculate Lowest Mark
         double minimum = marks[0]; //initialize minimum and set first value as minimum
         for (int i =0; i <marks.length; i++){
-            if (marks[i] < minimum){
-                minimum = marks[i]; 
+            if (marks[i] < minimum)/* This checks if selected mark marks[i] is smaller than the curernt minimum*/{
+                minimum = marks[i]; //If the if condtion is met then the current minimum is repalced with marks in the "i" position
             }
         }
         System.out.println("Lowest mark is: " + minimum);

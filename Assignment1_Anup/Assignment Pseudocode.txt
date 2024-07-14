@@ -4,10 +4,10 @@ Pseudocode for Programs
 Take user input for 30 students
 	Check if input marks is greater than or equal to 0 and  less than or equal to 30
 	If less than 0 or greater than 30 then show error
-	Repeat until valid input recieved
+	Repeat until valid input received
 Print all 30 inputs
 
-Calculate Highest Mark
+Calculate Highest Mark		
 	Make a variable “maximum” and put 1st mark as maximum
 	Check if next value is greater than “maximum”, 
 	if yes make the larger mark =  “maximum”
@@ -16,12 +16,12 @@ Calculate Highest Mark
 After completion show the value in “maximum” as highest mark
 
 Calculate lowest mark
-	Make a temporary value “minimum” and put 1st mark = minimum
+	Make a variable “minimum” and put 1st mark = minimum
 	Check if next value is less than “minimum”, 
 	if yes; make the smaller mark “minimum”
 	If No; compare with another value
 	Repeat
-After completion show the value in minimum as lowest mark
+After completion show the value in "minimum" as lowest mark
 
 --------------- Step 2 -------------
 

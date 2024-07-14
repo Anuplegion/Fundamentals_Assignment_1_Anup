@@ -35,7 +35,7 @@ public class GradeCalculator
 //Print all 30 input marks 
 System.out.println("Marks for all students: ");
 for (double mark : marks) {
-    System.out.print(mark + " ");
+    System.out.print(mark + " " + ",");
 }
 System.out.println();
 
@@ -47,5 +47,14 @@ for (double mark : marks){
     }
 }
 System.out.println("Highest mark is: " + maximum);
+
+//Calculate Lowest Mark
+double minimum = marks[0]; //initialize minimum and set first value as minimum
+for (double mark : marks){
+    if (mark < minimum){
+        minimum = mark; 
+    }
+}
+System.out.println("Lowest mark is: " + minimum);
 }
 }

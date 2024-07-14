@@ -27,4 +27,7 @@ Calculate mean 
 	Add all marks into sum
 	Divide the sum by 30
 
+Calculate Standard deviation
+
+
 

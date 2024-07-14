@@ -32,29 +32,54 @@ public class GradeCalculator
     
 
 
-//Print all 30 input marks 
-System.out.println("Marks for all students: ");
-for (double mark : marks) {
-    System.out.print(mark + " " + ",");
-}
-System.out.println();
+        //Print all 30 input marks 
+        System.out.println("Marks for all students: ");
+        for (double mark : marks) {
+            System.out.print(mark + " " + ",");
+        }
+        System.out.println();
+        
+        //Calculate Highest Mark by comparing
+        double maximum = marks[0]; //initialize maximum and set first value as maximum
+        for (double mark : marks){
+            if (mark > maximum){
+                maximum = mark;
+            }
+        }
+        System.out.println("Highest mark is: " + maximum);
+        
+        //Calculate Lowest Mark
+        double minimum = marks[0]; //initialize minimum and set first value as minimum
+        for (double mark : marks){
+            if (mark < minimum){
+                minimum = mark; 
+            }
+        }
+        System.out.println("Lowest mark is: " + minimum);
+        
+        //calculate Sum of all Marks
+        double SumOfMarks = 0; //initialize new variable to store sum of marks
+        for(int i =0; i <marks.length; i++){
+            SumOfMarks += marks[i];
+        }
+        System.out.println("Sum of mark is: " + SumOfMarks);
+        
+        //calculate Mean
+        double MarksMean = 0; //initialize mean as 0
+        MarksMean = SumOfMarks/marks.length; //calculate mean by sum/number of marks
+        
+        System.out.println("Mean of Marks is: " + MarksMean);
+        
+        //calculating variance to calculate standard deviation
+        // To do this first calculating sum of squared difference from mean
+        double SumofSquaredDifference = 0;
+        for(int i =0; i <marks.length; i++){
+            double difference = marks[i] - MarksMean;
+            SumofSquaredDifference += difference * difference;
+        }
+        
+        
 
-//Calculate Highest Mark by comparing
-double maximum = marks[0]; //initialize maximum and set first value as maximum
-for (double mark : marks){
-    if (mark > maximum){
-        maximum = mark;
-    }
-}
-System.out.println("Highest mark is: " + maximum);
-
-//Calculate Lowest Mark
-double minimum = marks[0]; //initialize minimum and set first value as minimum
-for (double mark : marks){
-    if (mark < minimum){
-        minimum = mark; 
-    }
-}
-System.out.println("Lowest mark is: " + minimum);
+takeinput.close();
 }
 }

@@ -1,5 +1,6 @@
-Pseudocode for Program
+Pseudocode for Programs
 
+-------------- Step 1 ----------------
 Take user input for 30 students
 	Check if input marks is greater than or equal to 0 and  less than or equal to 30
 	If less than 0 or greater than 30 then show error
@@ -22,12 +23,19 @@ Calculate lowest mark
 	Repeat
 After completion show the value in minimum as lowest mark
 
+--------------- Step 2 -------------
+
 Calculate mean 
 	Create a sum variable
 	Add all marks into sum
 	Divide the sum by 30
 
 Calculate Standard deviation
+	Calculate sum of squared difference by subtracting marks and mean for each then squaring
+	Calculate variance by adding all squared difference
+	Calculate standard deviation by calculating square root of variance
+
+In each step print each output.
 
 
 

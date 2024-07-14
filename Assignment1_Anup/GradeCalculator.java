@@ -78,6 +78,16 @@ public class GradeCalculator
             SumofSquaredDifference += difference * difference;
         }
         
+        //Calculating variance
+        //variance is the mean of sum of squared difference
+        double variance = SumofSquaredDifference / marks.length;
+        
+        //Calculating standard deviation
+        //Standard deviation is the square root of variance
+        double standardDeviation = Math.sqrt(variance);
+        
+        System.out.println("Standard Devaition of marks is : " + standardDeviation);
+        
         
 
 takeinput.close();

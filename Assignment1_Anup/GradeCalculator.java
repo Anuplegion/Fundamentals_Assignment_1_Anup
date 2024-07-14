@@ -2,8 +2,10 @@
 /**
  * Write a description of class GradeCalculator here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Anup Adhikari)
+ * Assignment for Fundamenals of Programming
+ * Student ID 24321345
+ * Southern Cross University, Gold Coast Campus
  */
 import java.util.Scanner; // To allow program to take input from user
 
